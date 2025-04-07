@@ -3,8 +3,8 @@
 A collection of automation scripts for initializing a Multipass Ubuntu VM.
 
 ## ✨ Features
-- Auto-configure firewall rules (`ufw`)
-- Create non-root user with sudo access
+1. Auto-configure firewall rules (`ufw`)
+2. Create non-root user with sudo access
 - Custom `.bashrc` with keybindings
 - Install essential tools:
   - Neovim 
