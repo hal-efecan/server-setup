@@ -7,7 +7,7 @@ A collection of automation scripts for initializing a Multipass Ubuntu VM.
 2. Create non-root user with sudo access
 - Custom `.bashrc` with keybindings
 - Install node and nvm
-- Install essential tools:
+- Install optional tools:
   - Neovim 
   - Zellij
 
