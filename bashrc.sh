@@ -1,13 +1,15 @@
 #!/bin/bash
 
-sudo apt install -y curl &&
+# Install curl as root
+sudo apt install -y curl
 
+# Define the variable
 BASHRC_URL="https://raw.githubusercontent.com/hal-efecan/bashrc/main/.bashrc"
 
-curl -o ~/.bashrc "$BASHRC_URL" &&
+# Download the file as the current user, not as root
+curl -o "$HOME/.bashrc" "$BASHRC_URL"
 
-source ~/.bashrc
+# Reload the new .bashrc in the current shell
+source "$HOME/.bashrc"
 
 echo "✅ Script complete"
-
-# curl -o ~/.bashrc "https://raw.githubusercontent.com/hal-efecan/bashrc/main/.bashrc"
