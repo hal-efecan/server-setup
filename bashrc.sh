@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Install curl as root
-sudo apt install -y curl
+# Check for curl
+if ! command -v curl &> /dev/null; then
+    echo "❌ curl is not installed. Please run: sudo apt install curl"
+    exit 1
+fi
 
 # Define the variable
 BASHRC_URL="https://raw.githubusercontent.com/hal-efecan/bashrc/main/.bashrc"
